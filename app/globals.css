@@ -12,11 +12,12 @@
 
     .scrollable-container::-webkit-scrollbar {
         display: none;
+        width: 0.2rem;
     }
 
     /* Hide the scrollbar for Firefox */
     .scrollable-container {
-        scrollbar-width: none;
+        scrollbar-width: 0.2rem;
     }
 
     

@@ -11,7 +11,7 @@ import ContactMe from "@/pages/Components/ContactMe";
 
 function page() {
   return (
-    <div className="bg-[rgb(63,63,63)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 overflow-y-scroll overflow-x-hidden">
+    <div className="bg-[rgb(63,63,63)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 overflow-y-scroll overflow-x-hidden  scrollbar-thin scrollbar-track-amber-500/50 scrollbar-thumb-amber-700">
       <Header />
 
       <section id="hero" className="snap-start">

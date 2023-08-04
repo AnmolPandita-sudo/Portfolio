@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 import { motion } from "framer-motion";
 import React from "react";
@@ -16,13 +15,13 @@ function Projects({}: Props) {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 2 }}
         id="projects"
-        className="h-screen flex relative overflow-hidden flex-col text-center md:flex-row max-w-full px-10 justify-evenly mx-auto items-center "
+        className="h-screen flex relative overflow-hidden flex-col text-center md:flex-row max-w-full px-10 justify-evenly mx-auto "
       >
         <h3 className="absolute top-24 uppercase tracking-[17px] text-gray-500 font-bold text-2xl">
           Projects
         </h3>
 
-        <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 mt-10">
+        <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin  scrollbar-track-amber-500/50 scrollbar-thumb-amber-700 scrollbar-corner-blue-200">
           {projects.map((project, i) => (
             // eslint-disable-next-line react/jsx-key
             <div className=" w-[100%] flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center md:mt-20 h-screen">
@@ -63,7 +62,7 @@ function Projects({}: Props) {
           ))}
         </div>
 
-        <div className="w-full absolute top-[30%] bg-[#F7AB0A]/20 left-0  h-96 -skew-y-12 rounded-full"></div>
+        <div className="w-full absolute top-[28%] bg-[#F7AB0A]/20 left-0  h-96 -skew-y-12 rounded-full "></div>
       </motion.div>
     </div>
   );

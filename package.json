@@ -33,6 +33,7 @@
     "@types/react-scroll": "^1.8.7",
     "install": "^0.13.0",
     "npm": "^9.8.1",
+    "tailwind-scrollbar": "^3.0.4",
     "tailwindcss": "^3.3.3"
   }
 }
