@@ -11,14 +11,14 @@ import {
   SiThemoviedatabase,
 } from "react-icons/si";
 
-import logo from "@/images/experience.svg";
+import logo from "../images/experience.jpg";
 
 type Props = {};
 
 function ExperienceCard({}: Props) {
   return (
     <article className="bg-[#393838] flex flex-col items-center flex-shrink-0 xl:w-[600px] md:w-[450px] w-96 rounded-3xl mt-24 snap-center p-10 hover:opacity-100 opacity-60 transition-opacity duration-300 cursor-pointer overflow-hidden">
-      <motion.img
+      <motion.div
         initial={{
           y: -200,
           opacity: 0,
@@ -28,10 +28,13 @@ function ExperienceCard({}: Props) {
         }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        src="/pages/images/experience.jpg"
-        alt=" "
-        className="w-24 h-24 xl:w-28 xl:h-28 rounded-full object-cover object-center bg-[#3f3f3f] mx-auto -mt-4"
-      />
+      >
+        <Image
+          src={logo}
+          alt="logo"
+          className="w-24 h-24 xl:w-28 xl:h-28 rounded-full object-cover bg-[#3f3f3f] mx-auto -mt-4"
+        />
+      </motion.div>
 
       <div className="px-0 bg-[#393838] mb-2 mx-2">
         <h4 className="text-5xl font-light">CEO</h4>
