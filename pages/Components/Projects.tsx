@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import Image from "next/image";
-import netflix from "../images/web-streaming-app.svg";
+import netflix from "../images/web-streaming-app.png";
 
 type Props = {};
 
@@ -26,17 +26,25 @@ function Projects({}: Props) {
           {projects.map((project, i) => (
             // eslint-disable-next-line react/jsx-key
             <div className=" w-[100%] flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center md:mt-20 h-screen">
-              <motion.img
-                initial={{ y: -500, opacity: 0 }}
-                transition={{ duration: 1.2 }}
+              <motion.div
+                initial={{
+                  y: -300,
+                  opacity: 0,
+                }}
+                transition={{
+                  duration: 1.2,
+                }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                src="/pages/images/web-streaming-app.png"
-                height={150}
-                width={150}
-                alt="Project"
-                className="mx-auto object-cover"
-              />
+              >
+                <Image
+                  src={netflix}
+                  alt="Project"
+                  height={600}
+                  width={600}
+                  className="mx-auto object-cover"
+                />
+              </motion.div>
 
               <div>
                 <h4>
@@ -55,7 +63,7 @@ function Projects({}: Props) {
           ))}
         </div>
 
-        <div className="w-full absolute top-[30%] bg-[#F7AB0A]/20 -left-5 -right-5 h-96 -skew-y-12 rounded-full"></div>
+        <div className="w-full absolute top-[30%] bg-[#F7AB0A]/20 left-0  h-96 -skew-y-12 rounded-full"></div>
       </motion.div>
     </div>
   );
