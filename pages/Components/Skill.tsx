@@ -11,12 +11,16 @@ function Skill({ directionLeft }: Props) {
   return (
     <div className="group relative flex cursor-pointer">
       <motion.img
-        initial={{
-          x: directionLeft ? -200 : 200,
-          opacity: 0,
-        }}
-        transition={{ duration: 1 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        // initial={{
+        //   y: directionLeft ? -200 : 200,
+        //   opacity: 0,
+        // }}
+        // transition={{ duration: 2 }}
+        // whileInView={{ opacity: 1, x: 0 }}
+
+        initial={{ opacity: 0.2 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 2 }}
         src="https://www.svgrepo.com/show/354113/nextjs-icon.svg"
         alt=""
         className="rounded-full border-gray-500 w-20 h-20 md:w-20 md:h-20 xl:w-24 xl:h-24 filter group-hover:grayscale transition duration-300 ease-in-out justify-center items-center"
